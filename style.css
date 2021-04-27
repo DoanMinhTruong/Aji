@@ -1,0 +1,355 @@
+@font-face {
+    font-family: iCielSoupofJustice;
+    src: url('./Fonts/iCielSoupofJustice.ttf');
+}
+
+@font-face {
+    font-family: MyriadPro-Bold;
+    src: url('./Fonts/MyriadPro-Bold.otf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('./Fonts/Roboto-Regular.ttf');
+}
+
+
+
+
+*{
+    padding : 0;
+    margin : 0;
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+    cursor: none;
+}
+.text-danger{
+    color: #ff5151;
+}
+.border-danger{
+    border: 2px solid #ff5151; 
+}
+#close{
+    cursor: none;
+}
+#start{
+    cursor: none;
+}
+body{
+    height: 100%;
+    background-image: url("./SVG/background.svg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment:fixed;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: contain;
+    overflow: hidden;
+    scrollbar-width:  none;
+}
+/* Notice */
+.notice{
+    /* background-image: url('./SVG/startgame.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%; */
+    height: 30%;
+    width: 30%;
+    margin-top: 10%;
+    /* padding: 0; */
+
+}
+/* .notice_content{
+    padding : 3% 10%;
+}
+.notice_title{
+    color: #ff5151;
+} */
+
+
+/* End notice */
+/* Result child */
+
+.result-child{
+    height: 30%;
+    width: 30%;
+    margin-top: 10%;
+}
+.input-email{
+    color: white;
+    height: 3%;
+    width: 11%;
+    margin-top: 23.7%;
+    margin-left: 4%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid;
+}
+
+
+
+/*  */
+.count3{
+    color: #ff5151;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    font-size: 140px;
+    text-shadow: 10px 0px 5px white;
+}
+.board{
+    display: none;
+}
+.board_timer{
+    margin-top: 5px;
+    pointer-events: none;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+}
+#cart{
+    z-index: -1;
+    pointer-events: none;
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#cart_img{
+    z-index: 1;
+    /* -webkit-logical-height: auto; */
+    width: 20%;
+    height: auto;
+    /* -webkit-logical-width: 23%; */
+}
+
+.item_fall{
+    position: absolute;
+    width: 120px;
+    height: auto;
+
+    padding-top: 90px;
+    
+    /* background-color: black; */
+    background-image: url('./resized/twin4.gif');
+    background-size: contain;
+    background-position: top;
+}
+.cart_image{
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    width: 3.5%;
+    top: 30%;
+}
+.invisible{
+    opacity: 0.5 ;
+}
+
+
+.result{
+    margin-top: 20%;
+    
+}
+
+.notice, .result-child, .board_timer {
+    position: absolute;
+    top: -100%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.3s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+    100% { top: 0; }
+}
+
+@keyframes slide {
+    100% { top: 0; }
+}
+
+#cart{
+    position: absolute;
+    bottom: -1000px;
+    -webkit-animation: slidecart 0.5s forwards;
+    -webkit-animation-delay: 0.25s;
+    animation: slidecart 0.5s forwards;
+    animation-delay: 0.25s;
+}
+@-webkit-keyframes slidecart {
+    100% { bottom: 10%; }
+}
+
+@keyframes slidecart {
+    100% { bottom: 10%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+@media only screen and (max-width: 1200px ) {
+    
+    .notice{
+        height: 50%;
+        width: 50%;
+    }
+    .result-child{
+        height: 50%;
+        width: 50%;
+    }
+    .input-email{
+        width: 17%;
+        height: 25px;
+        margin-top: 32.8%;
+        margin-left: 7%;
+
+    }
+    .item_fall{
+        width : 100px;
+    }
+    #cart_img{
+        /* -webkit-logical-width: 25%; */
+        width: 23%;
+    height: auto;
+    }
+}
+@media only screen and (max-width: 992px) {
+    /* .notice_content{
+        padding : 3% 3%;
+    } */
+    .notice{
+        height: 70%;
+        width: 90%;
+    }
+    .result-child{
+        height: 70%;
+        width: 90%;
+    }
+    .item_fall{
+        
+        width : 90px;
+    }
+    .board_timer{
+        position: absolute;
+        width: 40%;
+        left: 30%;
+    }
+    .input-email{
+        width: 32%;
+        height: 25px;
+        margin-top: 52%;
+        margin-left: 12%;
+
+    }
+    .cart_image{
+        width: 5%;
+    }
+    #cart_img{
+        /* -webkit-logical-width: 25%; */
+        width: 25%;
+    height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .notice{
+        height: 70%;
+        width: 90%;
+    }
+    .result-child{
+        height: 70%;
+        width: 90%;
+    }
+    .input-email{
+        width: 32%;
+        height: 15px;
+        margin-top: 50%;
+        margin-left: 12%;
+
+    }
+    .item_fall{
+        width : 110px;
+    }
+    /* .notice_content{
+        padding : 3% 3%;
+    } */
+    .board_timer{
+        position: absolute;
+        width: 70%;
+        left: 17%;
+    }
+    .cart_image{
+        width: 8%;
+    }
+    #cart_img{
+        /* -webkit-logical-width: 30%; */
+        width: 28%;
+    height: auto;
+    }
+}
+
+.item_fall{
+    animation: app-logo-spin infinite 2.75s linear;
+    border-radius: 20%;
+}
+
+
+@keyframes app-logo-spin {
+    /* from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);} */
+    25%{
+        /* opacity: 0; */
+        transform: rotate(-10deg);
+    }
+    50%{
+        opacity: 0.7;
+        transform: rotate(0deg);
+
+    }
+    75%{
+        opacity: 1;
+        transform: rotate(10deg);
+    }
+  }
+
+
+
+@media only screen and (max-height: 414px) {
+    
+    .item_fall{
+        width : 65px;
+    }
+    .cart_image{
+        height: 20%;
+    }
+    #cart_img{
+        /* -webkit-logical-width: 30%; */
+        width: 13%;
+        height: auto;
+    }
+    .notice, .result-child{
+        margin-top : 3%;
+    }
+}
+  
+
+
+.cls-35{
+    text-shadow:2px 0 1px black,0 2px 1px black,-2px 0 1px black,0 -2px 1px black;
+}
