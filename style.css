@@ -42,8 +42,8 @@ body{
     background-position: 50% 0;
     background-size: cover;
     background-attachment:fixed;
-    overscroll-behavior-x: contain;
-    overscroll-behavior-y: contain;
+    /* overscroll-behavior-x: contain; */
+    /* overscroll-behavior-y: contain; */
     overflow: hidden;
     scrollbar-width:  none;
 }
@@ -54,7 +54,7 @@ body{
     background-repeat: no-repeat;
     background-position: 50%; */
     height: 30%;
-    width: 30%;
+    width: 40%;
     margin-top: 10%;
     /* padding: 0; */
 
@@ -72,14 +72,14 @@ body{
 
 .result-child{
     height: 30%;
-    width: 30%;
+    width: 40%;
     margin-top: 10%;
 }
 .input-email{
     color: white;
     height: 3%;
     width: 11%;
-    margin-top: 23.7%;
+    margin-top: 25%;
     margin-left: 4%;
     background-color: transparent;
     border: none;
@@ -96,7 +96,7 @@ body{
     width: 100%;
     top: 30%;
     font-size: 140px;
-    text-shadow: 10px 0px 5px white;
+    pointer-events: none;
 }
 .board{
     display: none;
@@ -124,14 +124,15 @@ body{
 #cart_img{
     z-index: 1;
     /* -webkit-logical-height: auto; */
-    width: 20%;
+    width: 40%;
     height: auto;
     /* -webkit-logical-width: 23%; */
+    pointer-events: none;
 }
 
 .item_fall{
     position: absolute;
-    width: 120px;
+    width: 160px;
     height: auto;
 
     padding-top: 90px;
@@ -140,6 +141,7 @@ body{
     background-image: url('./resized/twin4.gif');
     background-size: contain;
     background-position: top;
+    text-shadow: 2px 2px 4px #000000;
 }
 .cart_image{
     z-index: 2;
@@ -217,7 +219,7 @@ body{
     .input-email{
         width: 17%;
         height: 25px;
-        margin-top: 32.8%;
+        margin-top: 35%;
         margin-left: 7%;
 
     }
@@ -254,7 +256,7 @@ body{
     .input-email{
         width: 32%;
         height: 25px;
-        margin-top: 52%;
+        margin-top: 56%;
         margin-left: 12%;
 
     }
@@ -271,15 +273,19 @@ body{
     .notice{
         height: 70%;
         width: 90%;
+        margin-top: 30%;
+
     }
     .result-child{
         height: 70%;
         width: 90%;
+        margin-top: 30%;
+
     }
     .input-email{
         width: 32%;
         height: 15px;
-        margin-top: 50%;
+        margin-top: 54%;
         margin-left: 12%;
 
     }
@@ -299,7 +305,7 @@ body{
     }
     #cart_img{
         /* -webkit-logical-width: 30%; */
-        width: 28%;
+        width: 45%;
     height: auto;
     }
 }
@@ -318,12 +324,12 @@ body{
         transform: rotate(-10deg);
     }
     50%{
-        opacity: 0.7;
+        /* opacity: 0.7; */
         transform: rotate(0deg);
 
     }
     75%{
-        opacity: 1;
+        /* opacity: 1; */
         transform: rotate(10deg);
     }
   }
