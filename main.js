@@ -66,7 +66,7 @@ const game = document.querySelector('.notice')
             count3.style.display = 'none'
             count3.innerText = '3'
             board.style.display = 'block'
-            for(let i = 0 ;i< 60; i++)
+            for(let i = 0 ;i< 50; i++)
                 Fall()
             CountDownTime(1500, timer, function(){
                 div_time.innerHTML = "";
@@ -191,12 +191,13 @@ const game = document.querySelector('.notice')
     }
     async function Fall(){
         var rand_id = Math.floor(Math.random() * 12)
-        var rand_left = Math.floor(Math.random() * 60) + 20
+        var rand_left = Math.floor(Math.random() * 80) + 10
         var rand_speed = (Math.random() * 10) + 5   
         var wait = Math.random() * 50000 + 500 
         var item = document.createElement('img')
         item.className = 'item_fall my-1'
         item.draggable = "true";
+        item.loading = "lazy";
         item.src = products[rand_id]
         item.style.left = rand_left + '%';
         item.style.transition = 'all 1s';
