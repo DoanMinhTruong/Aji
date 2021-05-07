@@ -278,73 +278,7 @@ body {
 		height: auto
 	}
 }
-/* Safari*/
-@media screen and (-webkit-min-device-pixel-ratio:0)  {
-    .notice {
-		height: 70%;
-		width: 90%
-	}
-	.result-child {
-		height: 70%;
-		width: 90%
-	}
-	.item_fall {
-		width: 90px
-	}
-	.board_timer {
-		position: absolute;
-		width: 40%;
-		left: 30%
-	}
-	.input-email {
-		width: 32%;
-		height: 25px;
-		margin-top: 56%;
-		margin-left: 12%
-	}
-	.cart_image {
-		width: 5%
-	}
-	#cart_img {
-		width: 25%;
-		height: auto
-	}
-}
 
-@media only screen and (max-width: 767px) {
-	.notice {
-		height: 70%;
-		width: 90%;
-		margin-top: 30%
-	}
-	.result-child {
-		height: 70%;
-		width: 90%;
-		margin-top: 30%
-	}
-	.input-email {
-		width: 30%;
-		height: 15px;
-		margin-top: 74%;
-		margin-left: 12%
-	}
-	.item_fall {
-		width: 110px
-	}
-	.board_timer {
-		position: absolute;
-		width: 70%;
-		left: 17%
-	}
-	.cart_image {
-		width: 8%
-	}
-	#cart_img {
-		width: 45%;
-        top: 50%;
-		height: auto
-	}
-}
 .item_fall {
 	animation: app-logo-spin infinite 2.75s linear;
 	border-radius: 20%
