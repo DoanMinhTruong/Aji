@@ -112,7 +112,7 @@ body {
 }
 
 #cart_img {
-	display: block;
+	display: flex;
 	z-index: 1;
 	width: 40%;
 	height: auto;
