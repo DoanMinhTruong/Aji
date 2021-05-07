@@ -1,44 +1,44 @@
 @font-face {
 	font-family: iCielSoupofJustice;
-	src: url(./Fonts/iCielSoupofJustice.ttf)
+	src: url(./Fonts/iCielSoupofJustice.ttf);
 }
 
 @font-face {
 	font-family: MyriadPro-Bold;
-	src: url(./Fonts/MyriadPro-Bold.otf)
+	src: url(./Fonts/MyriadPro-Bold.otf);
 }
 
 @font-face {
 	font-family: Roboto-Regular;
-	src: url(./Fonts/Roboto-Regular.ttf)
+	src: url(./Fonts/Roboto-Regular.ttf);
 }
 
 * {
 	padding: 0;
-	margin: 0
+	margin: 0;
 }
 
 html,
 body {
 	height: 100%;
 	overflow: hidden;
-	cursor: none
+	cursor: none;
 }
 
 .text-danger {
-	color: #ff5151
+	color: #ff5151;
 }
 
 .border-danger {
-	border: 2px solid #ff5151
+	border: 2px solid #ff5151;
 }
 
 #close {
-	cursor: none
+	cursor: none;
 }
 
 #start {
-	cursor: none
+	cursor: none;
 }
 
 body {
@@ -47,20 +47,21 @@ body {
 	background-position: 50% 0;
 	background-size: cover;
 	background-attachment: fixed;
+    -webkit-overflow-scrolling: touch;
 	overflow: hidden;
-	scrollbar-width: none
+	scrollbar-width: none;
 }
 
 .notice {
 	height: 30%;
 	width: 40%;
-	margin-top: 10%
+	margin-top: 10%;
 }
 
 .result-child {
 	height: 30%;
 	width: 40%;
-	margin-top: 10%
+	margin-top: 10%;
 }
 
 .input-email {
@@ -71,7 +72,7 @@ body {
 	margin-left: 4%;
 	background-color: transparent;
 	border: none;
-	border-bottom: solid
+	border-bottom: solid;
 }
 
 .count3 {
@@ -81,11 +82,11 @@ body {
 	width: 100%;
 	top: 30%;
 	font-size: 140px;
-	pointer-events: none
+	pointer-events: none;
 }
 
 .board {
-	display: none
+	display: none;
 }
 
 .board_timer {
@@ -93,7 +94,7 @@ body {
 	pointer-events: none;
 	position: absolute;
 	width: 20%;
-	left: 40%
+	left: 40%;
 }
 
 #cart {
@@ -107,14 +108,14 @@ body {
 	display: inline-flex;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center
+	justify-content: center;
 }
 
 #cart_img {
 	z-index: 1;
 	width: 40%;
 	height: auto;
-	pointer-events: none
+	pointer-events: none;
 }
 
 .item_fall {
@@ -125,7 +126,7 @@ body {
 	background-image: url(./resized/twin4.gif);
 	background-size: contain;
 	background-position: top;
-	text-shadow: 2px 2px 4px #000
+	text-shadow: 2px 2px 4px #000;
 }
 
 .cart_image {
@@ -133,15 +134,15 @@ body {
 	position: absolute;
 	height: auto;
 	width: 3.5%;
-	top: 30%
+	top: 30%;
 }
 
 .invisible {
-	opacity: .5
+	opacity: .5;
 }
 
 .result {
-	margin-top: 20%
+	margin-top: 20%;
 }
 
 .notice,
@@ -152,18 +153,18 @@ body {
 	-webkit-animation: slide .5s forwards;
 	-webkit-animation-delay: .3s;
 	animation: slide .5s forwards;
-	animation-delay: .3s
+	animation-delay: .3s;
 }
 
 @-webkit-keyframes slide {
 	100% {
-		top: 0
+		top: 0;
 	}
 }
 
 @keyframes slide {
 	100% {
-		top: 0
+		top: 0;
 	}
 }
 
@@ -173,74 +174,74 @@ body {
 	-webkit-animation: slidecart .5s forwards;
 	-webkit-animation-delay: .25s;
 	animation: slidecart .5s forwards;
-	animation-delay: .25s
+	animation-delay: .25s;
 }
 
 @-webkit-keyframes slidecart {
 	100% {
-		bottom: 10%
+		bottom: 10%;
 	}
 }
 
 @keyframes slidecart {
 	100% {
-		bottom: 10%
+		bottom: 10%;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
 	.notice {
 		height: 50%;
-		width: 50%
+		width: 50%;
 	}
 	.result-child {
 		height: 50%;
-		width: 50%
+		width: 50%;
 	}
 	.input-email {
 		width: 17%;
 		height: 25px;
 		margin-top: 35%;
-		margin-left: 7%
+		margin-left: 7%;
 	}
 	.item_fall {
-		width: 100px
+		width: 100px;
 	}
 	#cart_img {
 		width: 23%;
-		height: auto
+		height: auto;
 	}
 }
 
 @media only screen and (max-width: 992px) {
 	.notice {
 		height: 70%;
-		width: 90%
+		width: 90%;
 	}
 	.result-child {
 		height: 70%;
-		width: 90%
+		width: 90%;
 	}
 	.item_fall {
-		width: 90px
+		width: 90px;
 	}
 	.board_timer {
 		position: absolute;
 		width: 40%;
-		left: 30%
+		left: 30%;
 	}
 	.input-email {
 		width: 32%;
 		height: 25px;
 		margin-top: 56%;
-		margin-left: 12%
+		margin-left: 12%;
 	}
 	.cart_image {
-		width: 5%
+		width: 5%;
 	}
 	#cart_img {
 		width: 25%;
-		height: auto
+		height: auto;
 	}
 }
 
@@ -248,12 +249,12 @@ body {
 	.notice {
 		height: 70%;
 		width: 90%;
-		margin-top: 30%
+		margin-top: 30%;
 	}
 	.result-child {
 		height: 70%;
 		width: 90%;
-		margin-top: 30%
+		margin-top: 30%;
 	}
 	.input-email {
 		width: 30%;
@@ -262,57 +263,57 @@ body {
 		margin-left: 12%
 	}
 	.item_fall {
-		width: 110px
+		width: 90px;
 	}
 	.board_timer {
 		position: absolute;
 		width: 70%;
-		left: 17%
+		left: 17%;
 	}
 	.cart_image {
-		width: 8%
+		width: 8%;
 	}
 	#cart_img {
 		width: 45%;
         top: 50%;
-		height: auto
+		height: auto;
 	}
 }
 
 .item_fall {
 	animation: app-logo-spin infinite 2.75s linear;
-	border-radius: 20%
+	border-radius: 20%;
 }
 
 @keyframes app-logo-spin {
 	25% {
-		transform: rotate(-10deg)
+		transform: rotate(-10deg);
 	}
 	50% {
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 	75% {
-		transform: rotate(10deg)
+		transform: rotate(10deg);
 	}
 }
 
 @media only screen and (max-height: 414px) {
 	.item_fall {
-		width: 65px
+		width: 65px;
 	}
 	.cart_image {
-		height: 20%
+		height: 20%;
 	}
 	#cart_img {
 		width: 13%;
-		height: auto
+		height: auto;
 	}
 	.notice,
 	.result-child {
-		margin-top: 3%
+		margin-top: 3%;
 	}
 }
 
 .cls-35 {
-	text-shadow: 2px 0 1px black, 0 2px 1px black, -2px 0 1px black, 0 -2px 1px #000
+	text-shadow: 2px 0 1px black, 0 2px 1px black, -2px 0 1px black, 0 -2px 1px #000;
 }
