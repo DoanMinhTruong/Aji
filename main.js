@@ -66,7 +66,7 @@ const game = document.querySelector('.notice')
             count3.style.display = 'none'
             count3.innerText = '3'
             board.style.display = 'block'
-            for(let i = 0 ;i< 25; i++)
+            for(let i = 0 ;i< 22; i++)
                 Fall()
             CountDownTime(1500, timer, function(){
                 div_time.innerHTML = "";
