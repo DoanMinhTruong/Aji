@@ -66,7 +66,7 @@ const game = document.querySelector('.notice')
             count3.style.display = 'none'
             count3.innerText = '3'
             board.style.display = 'block'
-            for(let i = 0 ;i< 50; i++)
+            for(let i = 0 ;i< 25; i++)
                 Fall()
             CountDownTime(1500, timer, function(){
                 div_time.innerHTML = "";
@@ -193,7 +193,7 @@ const game = document.querySelector('.notice')
         var rand_id = Math.floor(Math.random() * 12)
         var rand_left = Math.floor(Math.random() * 80) + 10
         var rand_speed = (Math.random() * 10) + 5   
-        var wait = Math.random() * 50000 + 500 
+        var wait = Math.random() * 15000 + 500 
         var item = document.createElement('img')
         item.className = 'item_fall my-1'
         item.draggable = "true";
@@ -289,7 +289,8 @@ const game = document.querySelector('.notice')
             var y1 = cart.getBoundingClientRect().y
             var y2 = y1 + cart.getBoundingClientRect().width
             if(e.clientX >= x1-(item.x* (10/100)) && e.clientX <= x2+(item.x* (10/100))  && e.clientY >= y1-(item.y* (10/100)) && e.clientY <= y2+(item.y* (10/100))){
-                e.preventDefault()
+                e.preventDefault();
+                clearInterval(auto);
                 item.remove();
                 ChongAnh()
                 SoundCart();
