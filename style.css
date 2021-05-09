@@ -276,7 +276,8 @@ body {
 	}
 	#cart_img {
 		width: 45%;
-        top: 50%;
+		/* here */
+        margin-top: 50%;
 		height: auto;
 	}
 }
