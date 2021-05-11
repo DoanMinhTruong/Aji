@@ -66,7 +66,7 @@ const game = document.querySelector('.notice')
             count3.style.display = 'none'
             count3.innerText = '3'
             board.style.display = 'block'
-            for(let i = 0 ;i< 17; i++)
+            for(let i = 0 ;i< 3; i++)
                 Fall()
             CountDownTime(1500, timer, function(){
                 div_time.innerHTML = "";
@@ -144,7 +144,7 @@ const game = document.querySelector('.notice')
         var rand_id = Math.floor(Math.random() * 12)
         var rand_left = Math.floor(Math.random() * 80) + 10
         var rand_speed = (Math.random() * 10) + 5   
-        var wait = Math.random() * 15000 + 500 
+        var wait = Math.random() * 2500 + 100 
         var item = document.createElement('img')
         item.className = 'item_fall my-1'
         item.draggable = "true";
@@ -174,6 +174,7 @@ const game = document.querySelector('.notice')
                 if(i >= hei - (hei * 1 /100)) {
                     clearInterval(auto)
                     item.remove();
+                    Fall();
                 } 
             }, 70);
         }
@@ -217,6 +218,7 @@ const game = document.querySelector('.notice')
                         if(i >= hei - (hei *  1/100)) {
                             clearInterval(int)
                             item.remove()
+                            // Fall();
                         } 
                     }, 50);
                 }
@@ -243,6 +245,7 @@ const game = document.querySelector('.notice')
                 e.preventDefault();
                 clearInterval(auto);
                 item.remove();
+                Fall();
                 ChongAnh()
                 SoundCart();
                 score++;
@@ -284,6 +287,7 @@ const game = document.querySelector('.notice')
                             e.preventDefault()
                     if(el.clientX >= x1-(item.x* (5/100)) && el.clientX <= x2+(item.x* (5/100))  && el.clientY >= y1-(item.y* (5/100)) && el.clientY <= y2+(item.y* (5/100))){
                         item.remove();
+                        // Fall();
                         ChongAnh()
                         SoundCart();
                         score++;
@@ -300,6 +304,7 @@ const game = document.querySelector('.notice')
                             if(i >= hei - (hei *  1/100)) {
                                 clearInterval(int2)
                                 item.remove()
+                                Fall();
                             } 
             
                         }, 50);
