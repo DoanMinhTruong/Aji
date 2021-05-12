@@ -143,7 +143,7 @@ const game = document.querySelector('.notice')
     }
     async function Fall(){
         var rand_id = Math.floor(Math.random() * 12)
-        var rand_left = Math.floor(Math.random() * 60) + 20
+        var rand_left = Math.floor(Math.random() * 50) + 25
         var rand_speed = (Math.random() * 10) + 5   
         var wait = Math.random() * 3000 + 50 
         var item = document.createElement('img')
