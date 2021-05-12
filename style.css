@@ -120,6 +120,7 @@ body {
 }
 
 .item_fall {
+	overflow-x: hidden;
 	position: absolute;
 	width: 160px;
 	height: auto;
