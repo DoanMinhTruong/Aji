@@ -143,7 +143,7 @@ const game = document.querySelector('.notice')
     }
     async function Fall(){
         var rand_id = Math.floor(Math.random() * 12)
-        var rand_left = Math.floor(Math.random() * 50) + 20
+        var rand_left = Math.floor(Math.random() * 55) + 20
         var rand_speed = (Math.random() * 10) + 5   
         var wait = Math.random() * 3000 + 50 
         var item = document.createElement('img')
@@ -152,11 +152,12 @@ const game = document.querySelector('.notice')
         item.loading = "lazy";
         item.src = products[rand_id]
         item.style.left = rand_left + '%';
+
         item.style.transition = 'all 1s';
         
 
 
-        item.style.display = 'block'
+        item.style.display = 'flex'
         await sleep(wait)
         board.appendChild(item)
 
