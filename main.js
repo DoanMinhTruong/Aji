@@ -177,7 +177,7 @@ const game = document.querySelector('.notice')
                     item.remove();
                     Fall();
                 } 
-            }, 50);
+            }, 65);
         }
         ItemFallDown( 50, item, rand_speed)
         var int
